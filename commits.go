@@ -56,6 +56,8 @@ func (c Commit) String() string {
 type ListCommitsOptions struct {
 	ListOptions
 	RefName *string `url:"ref_name,omitempty" json:"ref_name,omitempty"`
+	Since   *string `url:"since,omitempty" json:"since,omitempty"`
+	Until   *string `url:"until,omitempty" json:"until,omitempty"`
 }
 
 // ListCommits gets a list of repository commits in a project.
